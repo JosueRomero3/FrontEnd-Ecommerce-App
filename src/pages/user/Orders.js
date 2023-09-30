@@ -10,7 +10,7 @@ const Orders = () => {
   const [auth, setAuth] = useAuth();
   const getOrders = async () => {
     try {
-      const { data } = await axios.get("https://ecommerce-app-api.onrender.com/api/v1/auth/orders");
+      const { data } = await axios.get("https://latiendita-7fxv.onrender.com/api/v1/auth/orders");
       setOrders(data);
     } catch (error) {
       console.log(error);
